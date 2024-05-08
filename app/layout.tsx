@@ -8,12 +8,13 @@ import Banner from './Banner';
 import Header from './Header';
 import Footer from './Footer';
 
-const Layout = ({ children }) => {
-  const sans = Generator({
-    src: '../fonts/Generator-Variable.ttf',
-    variable: '--font-sans',
-  });
+// Déclarez votre Generator en dehors de la fonction Layout
+const sans = Generator({
+  src: '../fonts/Generator-Variable.ttf',
+  variable: '--font-sans',
+});
 
+const Layout = ({ children }) => {
   const generateMetadata = async () => {
     const siteData = await getGlobalData();
     return {
