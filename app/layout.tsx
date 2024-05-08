@@ -4,9 +4,9 @@ import React from 'react';
 import Head from 'next/head';
 import { getGlobalData } from '../lib/cosmic';
 import Generator from 'next/font/local';
-import Banner from './Banner';
-import Header from './Header';
-import Footer from './Footer';
+import Banner from '../components/Banner';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 // Déclarez votre Generator en dehors de la fonction Layout
 const sans = Generator({
