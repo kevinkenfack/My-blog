@@ -18,6 +18,7 @@ export async function generateMetadata({
   const post = await getPost({ params });
   return {
     title: `${post.title}`,
+    description: `${post.slug}`,
     openGraph: {
       url: "https://blog.kevinkenfack.com",
       images: `${post.metadata.hero?.imgix_url}`,
