@@ -3,19 +3,19 @@ const helpers = {
   friendlyDate: function (a) {
     var months = [
       'Jan',
-      'Feb',
+      'Fev',
       'Mar',
-      'Apr',
-      'May',
-      'Jun',
-      'Jul',
-      'Aug',
-      'Sep',
+      'Avrl',
+      'Mai',
+      'Juin',
+      'Jui ',
+      'Aout',
+      'Sept',
       'Oct',
       'Nov',
       'Dec',
     ];
-    var days = ['Sun', 'Mon', 'Tues', 'Wed', 'Thurs', 'Fri', 'Sat'];
+    var days = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
     var year = a.getFullYear();
     var month = months[a.getMonth()];
     var day = days[a.getDay()];
@@ -50,7 +50,7 @@ const helpers = {
   // @ts-ignore
   stringToFriendlyDate: function (date_string) {
     const date = helpers.friendlyDate(new Date(date_string));
-    const friendly_date = `${date.month} ${date.date}, ${date.year}`;
+    const friendly_date = `${date.date} ${date.month} , ${date.year}`;
     return friendly_date;
   },
 };
