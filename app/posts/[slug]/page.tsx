@@ -21,7 +21,7 @@ export async function generateMetadata({
     description: `${post.metadata.teaser}`,
     openGraph: {
       url: "https://blog.kevinkenfack.com",
-      images: `${post.metadata.hero?.imgix_url}`,
+      images: `${post.metadata.hero?.imgix_url}?w=1400&auto=format`,
     }
   }
 }
