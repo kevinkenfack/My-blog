@@ -22,7 +22,7 @@ export async function generateMetadata({
     openGraph: {
       url: "https://blog.kevinkenfack.com",
       images: `${post.metadata.hero?.imgix_url}?w=1400&auto=format`,
-      title: "Blog Kevin Kenfack",
+      siteName: "Blog Kevin Kenfack",
     }
   }
 }
