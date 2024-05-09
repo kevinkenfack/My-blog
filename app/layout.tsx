@@ -16,6 +16,10 @@ export async function generateMetadata() {
   return {
     title: "Blog Kevin Kenfack",
     description: "Développeur web et web entrepreneur, je vous livre mes conseils et astuces pour une réussite digitale pertinente.",
+    openGraph: {
+      url: "https://blog.kevinkenfack.com",
+      images: "https://blog.kevinkenfack.com/og-image.jpg",
+    }
   };
 }
 
