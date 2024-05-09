@@ -19,7 +19,7 @@ export async function generateMetadata() {
     openGraph: {
       url: "https://blog.kevinkenfack.com",
       images: "https://blog.kevinkenfack.com/og-image.jpg",
-      siteName: "Kevin Kenfack",
+      siteName: "Bienvenue sur mon blog",
     }
   };
 }
