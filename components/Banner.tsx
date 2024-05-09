@@ -8,7 +8,7 @@ export default function Banner(): JSX.Element {
       </span>
       <a
         href="https://kevinkenfack.com"
-        target="_parent"
+        target="_blank"
         className="text-green-500 underline dark:text-green-300"
       >
         ici
