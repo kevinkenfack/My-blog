@@ -17,8 +17,12 @@ export async function generateMetadata({
 }) {
   const post = await getPost({ params });
   return {
-    title: `${post.title} | Simple Next 13 Blog`,
-  };
+    title: `${post.title}`,
+    openGraph: {
+      url: "https://blog.kevinkenfack.com",
+      images: `${post.metadata.hero?.imgix_url}?w=1400&auto=format`,
+    }
+  }
 }
 
 export default async ({ params }: { params: { slug: string } }) => {
