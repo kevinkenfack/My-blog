@@ -17,7 +17,25 @@
 }
 
 
+/* Styles par défaut */
 ::selection {
   background-color: #88a4e6;
   color: #ffffff;
 }
+
+/* Styles pour le thème sombre */
+@media (prefers-color-scheme: dark) {
+  ::selection {
+    background-color: #88a4e6;
+    color: #ffffff;
+  }
+}
+
+/* Styles pour le thème clair */
+@media (prefers-color-scheme: light) {
+  ::selection {
+    background-color: #88a4e6;
+    color: #333333;
+  }
+}
+
