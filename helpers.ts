@@ -1,57 +1,57 @@
 const helpers = {
   // @ts-ignore
   friendlyDate: function (a) {
-    var months = [
+    var mois = [
       'Jan',
-      'Fev',
+      'Fév',
       'Mar',
-      'Avrl',
+      'Avr',
       'Mai',
       'Juin',
-      'Jui ',
-      'Aout',
+      'Juil ',
+      'Août',
       'Sept',
       'Oct',
       'Nov',
-      'Dec',
+      'Déc',
     ];
-    var days = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
-    var year = a.getFullYear();
-    var month = months[a.getMonth()];
-    var day = days[a.getDay()];
+    var jours = ['Dim', 'Lun', 'Mar', 'Mer', 'Jeu', 'Ven', 'Sam'];
+    var année = a.getFullYear();
+    var moisText = mois[a.getMonth()];
+    var jourText = jours[a.getDay()];
     var date = a.getDate();
-    var hour = a.getHours();
+    var heure = a.getHours();
     var min = a.getMinutes();
     var sec = a.getSeconds();
-    var time_friendly = this.getTime(a);
-    var time = {
-      day: day,
+    var tempsAmical = this.getTime(a);
+    var temps = {
+      jour: jourText,
       date: date,
-      month: month,
-      year: year,
-      hour: hour,
+      mois: moisText,
+      année: année,
+      heure: heure,
       min: min,
       sec: sec,
-      time_friendly: time_friendly,
+      tempsAmical: tempsAmical,
     };
-    return time;
+    return temps;
   },
   // @ts-ignore
   getTime: function (date) {
-    var hours = date.getHours();
+    var heures = date.getHours();
     var minutes = date.getMinutes();
-    var ampm = hours >= 12 ? 'pm' : 'am';
-    hours = hours % 12;
-    hours = hours ? hours : 12; // the hour '0' should be '12'
+    var ampm = heures >= 12 ? 'pm' : 'am';
+    heures = heures % 12;
+    heures = heures ? heures : 12;
     minutes = minutes < 10 ? '0' + minutes : minutes;
-    var strTime = hours + ':' + minutes + ampm;
+    var strTime = heures + ':' + minutes + ampm;
     return strTime;
   },
   // @ts-ignore
   stringToFriendlyDate: function (date_string) {
     const date = helpers.friendlyDate(new Date(date_string));
-    const friendly_date = `${date.date} ${date.month} , ${date.year}`;
-    return friendly_date;
+    const dateAmicale = `${date.date} ${date.mois} , ${date.année}`;
+    return dateAmicale;
   },
 };
 

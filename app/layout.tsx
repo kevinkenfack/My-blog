@@ -33,6 +33,7 @@ export default async function RootLayout({
 
   return (
     <html lang="en" className={`${sans.variable} font-sans`}>
+      <head><meta name="theme-color" content="#67e8f9" /></head>
       <body className="bg-white dark:bg-zinc-950">
         <Banner />
         <Header name={siteData} />

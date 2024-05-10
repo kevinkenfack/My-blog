@@ -87,7 +87,7 @@ export default async ({ params }: { params: { slug: string } }) => {
               {suggestedPosts && (
                 <div className="flex w-full flex-col">
                   <h3 className="pb-3 text-xl font-semibold text-zinc-800 dark:text-zinc-200">
-                    Suggested Posts
+                  Publications suggérées
                   </h3>
                   <div className="flex flex-col space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
                     {suggestedPosts
