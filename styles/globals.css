@@ -19,14 +19,14 @@
 
 /* Styles par défaut */
 ::selection {
-  background-color: #88a4e6;
+  background-color: rgba(136, 164, 230, 0.5);
   color: #ffffff;
 }
 
 /* Styles pour le thème sombre */
 @media (prefers-color-scheme: dark) {
   ::selection {
-    background-color: #88a4e6;
+    background-color: rgba(136, 164, 230, 0.5);
     color: #ffffff;
   }
 }
