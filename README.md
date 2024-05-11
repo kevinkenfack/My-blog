@@ -1,8 +1,8 @@
 # Blog Kevin Kenfack
 
-![Blog Kevin Kenfack](https://github.com/kevinkenfack/My-blog/blob/main/public/site-image.jpg)
+![Blog Kevin Kenfack](https://blog.kevinkenfack.com/site-image.jpg)
 
-### [View Demo](https://blog.kevinkenfack.com/)
+### [View Demo](https://blog.kevinkenfack.com)
 
 ### React + Next.js + Cosmic
 
@@ -10,7 +10,11 @@ This blog uses Next.js to create a React blog. It uses Next.js 13 and the new `a
 
 ## Getting Started
 
-git clone https://github.com/kevinkenfack/My-blog
+1. Log in to Cosmic and install the [Blog Kevin Kenfack](https://www.cosmicjs.com/marketplace/templates/simple-nextjs-blog).
+2. Run the following commands to install the code locally.
+
+```
+git clone https://github.com/kevinkenfack/My-blog.git
 cd My-blog
 ```
 
@@ -46,5 +50,3 @@ Open [http://localhost:3000](http://localhost:3000).
 <p>
 <a href="https://vercel.com/import/git?c=1&s=https://github.com/kevinkenfack/My-blog&env=NEXT_PUBLIC_COSMIC_BUCKET_SLUG,NEXT_PUBLIC_COSMIC_READ_KEY" rel="noopener noreferrer" target="_blank"><img src="https://cdn.cosmicjs.com/d3f0d5e0-c064-11ea-9a05-6f8a16b0b14c-deploy-to-vercel.svg" style="width: 100px;" class="fr-fic fr-dib fr-fil"></a>
 </p>
-
-## Enjoy it 😍
