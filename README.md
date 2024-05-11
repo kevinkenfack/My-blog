@@ -1,6 +1,6 @@
 # Blog Kevin Kenfack
 
-![Blog Kevin Kenfack](https://github.com/kevinkenfack/My-blog/public/site-image.jpg)
+![Blog Kevin Kenfack](https://github.com/kevinkenfack/My-blog/blob/main/public/site-image.jpg)
 
 ### [View Demo](https://blog.kevinkenfack.com/)
 
@@ -46,3 +46,5 @@ Open [http://localhost:3000](http://localhost:3000).
 <p>
 <a href="https://vercel.com/import/git?c=1&s=https://github.com/kevinkenfack/My-blog&env=NEXT_PUBLIC_COSMIC_BUCKET_SLUG,NEXT_PUBLIC_COSMIC_READ_KEY" rel="noopener noreferrer" target="_blank"><img src="https://cdn.cosmicjs.com/d3f0d5e0-c064-11ea-9a05-6f8a16b0b14c-deploy-to-vercel.svg" style="width: 100px;" class="fr-fic fr-dib fr-fil"></a>
 </p>
+
+## Enjoy it 😍
