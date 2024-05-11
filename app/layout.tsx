@@ -30,10 +30,11 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const siteData = await getGlobalData();
+  const isDarkMode = false;
 
   return (
     <html lang="en" className={`${sans.variable} font-sans`}>
-      <head><meta name="theme-color" content="#67e8f9" /></head>
+      <head><meta name="theme-color" content={isDarkMode ? "#67e8f9" : "#67e8f9"} /></head>
       <body className="bg-white dark:bg-zinc-950">
         <Banner />
         <Header name={siteData} />
