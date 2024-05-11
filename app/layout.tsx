@@ -32,17 +32,14 @@ export default async function RootLayout({
   const siteData = await getGlobalData();
 
   return (
-    <html lang="fr" className={`${sans.variable} font-sans`}>
-      <head>
-        {/* Utilisez une condition pour définir la couleur en fonction du thème sombre ou clair */}
-        <meta name="theme-color" content={isDarkMode ? "#67e8f9" : "#67e8f9"} />
-      </head>
-      <body className={`bg-white ${isDarkMode ? "dark:bg-zinc-950" : ""}`}>
+    <html lang="en" className={`${sans.variable} font-sans`}>
+      <head><meta name="theme-color" content="#67e8f9" /></head>
+      <body className="bg-white dark:bg-zinc-950">
         <Banner />
         <Header name={siteData} />
         {children}
         <Footer />
       </body>
     </html>
-  );  
+  );
 }
