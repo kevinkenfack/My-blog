@@ -16,7 +16,7 @@ export async function generateMetadata() {
   const siteData = await getGlobalData();
   return {
     title: "Blog Kevin Kenfack",
-    description: "Développeur web et web entrepreneur, je vous livre mes conseils et astuces pour une réussite digitale pertinente.",
+    description: "Développeur web et entrepreneur, je vous livre mes conseils et astuces pour une réussite digitale pertinente.",
     openGraph: {
       url: "https://blog.kevinkenfack.com",
       images: "https://blog.kevinkenfack.com/og-image.jpg",
