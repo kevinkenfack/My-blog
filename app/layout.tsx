@@ -5,6 +5,7 @@ import Generator from 'next/font/local';
 import Banner from '../components/Banner';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import { Analytics } from "@vercel/analytics/react"
 
 const sans = Generator({
   src: '../fonts/Generator-Variable.ttf',
